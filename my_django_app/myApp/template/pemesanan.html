@@ -1,0 +1,26 @@
+{% extends 'index.html' %} 
+{% block content  %} 
+<h3>Pemesanan Tiket</h3> 
+<table class="table table-striped"> 
+    <tr> 
+        <td>Nama</td> 
+        <td>{{ pemesanan.nama }}</td> 
+    </tr> 
+    <tr> 
+        <td>Email</td> 
+        <td>{{ pemesanan.email }}</td> 
+    </tr> 
+    <tr> 
+        <td>Jumlah Tiket</td> 
+        <td>{{ pemesanan.tiket }}</td> 
+    </tr>
+    <tr> 
+        <td>Metode Pembayaran</td> 
+        <td>{{ pemesanan.bayar}}</td> 
+    </tr>
+    <tr> 
+        <td>Total Pembayaran</td> 
+        <td>{{ pemesanan.total_harga}}</td> 
+    </tr>
+</table> 
+{% endblock  %}

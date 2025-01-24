@@ -1,0 +1,65 @@
+{% extends 'index.html' %}
+{% block content %}
+<style>
+    .rounded-circle {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+</style>
+<header class=" text-black text-center py-4" style="background-color: #b9d3ef">
+    <h1>Contact Us</h1>
+    <p>Contact us for more information</p>
+  </header>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Customer Service</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Development Team</h2>
+        <div class="row g-3">
+          <div class="col-6 text-center">
+            <img src="../static/img/anwar.jpg" alt="Foto Tim 1" class="rounded-circle border border-3">
+            <p>Muhtari Anwar</p>
+          </div>
+          <div class="col-6 text-center">
+            <img src="../static/img/nisa.jpg" alt="Foto Tim 2" class="rounded-circle border border-3">
+            <p>Anisa Fitriyani</p>
+          </div>
+          <div class="col-6 text-center">
+            <img src="../static/img/kia.jpg" alt="Foto Tim 3" class="rounded-circle border border-3">
+            <p>Azkia Amanda</p>
+          </div>
+          <div class="col-6 text-center">
+            <img src="../static/img/nafila.jpg" alt="Foto Tim 4" class="rounded-circle border border-3">
+            <p>Nafila Afni Alqibtiyah</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 style="text-align: center;" class="pb-2">Location</h2>
+  <div class="container-fluid">
+    <div class="row justify-content-center pb-3">
+      <div class="col-md-12 d-flex justify-content-center align-items-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2106401545666!2d106.83081707504!3d-6.494993893497132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c19092657f6b%3A0x195ea53ba17dbb4f!2sStadion%20Pakansari!5e0!3m2!1sid!2sid!4v1736834986173!5m2!1sid!2sid" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+{% endblock %}
